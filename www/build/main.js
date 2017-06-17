@@ -58422,7 +58422,7 @@ var SoundboardPage = (function () {
     return SoundboardPage;
 }());
 SoundboardPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/matthieugirard/WebApps/ionic-soundboard/src/pages/soundboard/soundboard.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title color="danger">\n    {{ title }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n<ion-grid>\n   <ion-row justify-content-start>  <ion-col offset-2 col-8 col-sm-8 col-md-8 col-xl-8 col-lg-8>\n  <button ion-button large  color="dark" *ngFor="let sound of sounds" outline full (click)="play(sound)">\n    <h2>{{ sound.title }}</h2>\n  </button>\n  </ion-col>\n</ion-row>\n</ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/matthieugirard/WebApps/ionic-soundboard/src/pages/soundboard/soundboard.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/matthieugirard/WebApps/adq_soundboard/src/pages/soundboard/soundboard.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title color="danger">\n    {{ title }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n<ion-grid>\n   <ion-row justify-content-start>  \n   <!-- <ion-col offset-2 col-8 col-sm-8 col-md-8 col-xl-8 col-lg-8> -->\n  <button ion-button color="dark" *ngFor="let sound of sounds" outline full (click)="play(sound)">\n    <h2>{{ sound.title }}</h2>\n  </button>\n<!--   </ion-col> -->\n</ion-row>\n</ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/matthieugirard/WebApps/adq_soundboard/src/pages/soundboard/soundboard.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
 ], SoundboardPage);
@@ -106679,7 +106679,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/matthieugirard/WebApps/ionic-soundboard/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/matthieugirard/WebApps/ionic-soundboard/src/app/app.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/matthieugirard/WebApps/adq_soundboard/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/matthieugirard/WebApps/adq_soundboard/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -116346,3 +116346,5 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 /***/ })
 /******/ ]);
 //# sourceMappingURL=main.js.map
+
+(function(w){var i=w.Ionic=w.Ionic||{};i.version='3.0.1';i.angular='4.0.0';})(window);

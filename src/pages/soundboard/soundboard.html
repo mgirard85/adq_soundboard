@@ -8,11 +8,12 @@
 <ion-content>
 
 <ion-grid>
-   <ion-row justify-content-start>  <ion-col offset-2 col-8 col-sm-8 col-md-8 col-xl-8 col-lg-8>
-  <button ion-button large  color="dark" *ngFor="let sound of sounds" outline full (click)="play(sound)">
+   <ion-row justify-content-start>  
+   <!-- <ion-col offset-2 col-8 col-sm-8 col-md-8 col-xl-8 col-lg-8> -->
+  <button ion-button color="dark" *ngFor="let sound of sounds" outline full (click)="play(sound)">
     <h2>{{ sound.title }}</h2>
   </button>
-  </ion-col>
+<!--   </ion-col> -->
 </ion-row>
 </ion-grid>
 
