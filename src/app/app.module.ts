@@ -1,5 +1,4 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -8,7 +7,10 @@ import { SoundboardPage } from '../pages/soundboard/soundboard';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+ 
+import { SmartAudio } from '../providers/smart-audio/smart-audio';
+import { NativeAudio } from '@ionic-native/native-audio';
+ 
 @NgModule({
   declarations: [
     MyApp,
@@ -16,7 +18,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -24,9 +25,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     SoundboardPage
   ],
-  providers: [
+   providers: [
     StatusBar,
     SplashScreen,
+    NativeAudio,
+    SmartAudio,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
