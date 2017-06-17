@@ -8,10 +8,10 @@ import { Http } from '@angular/http';
 export class SoundboardPage {
 
   /* EDIT THESE */
-  title: string = "Soundboard";
-  base_url: string = "http://kalis.me";
-  sounds_url: string = "/sounds";
-  randomColours: boolean = false;
+  title: string = "AlexDuQuebec - Soundboard";
+  base_url: string = "http://localhost:8100";
+  sounds_url: string = "/sound.html";
+  randomColours: boolean = true;
 
   /* Icon Colours */
   /* EDIT THESE */
