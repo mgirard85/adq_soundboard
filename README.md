@@ -27,19 +27,8 @@ Then run it locally with
 ```
 ionic serve --lab
 ```
-
-## Customising
-### Text
-Open `ionic-soundboard/src/pages/soundboard/soundboard.ts` and edit the following variables:
-* base_url -> The website which hosts your sound files
-* sounds_url -> The location where your sounds are on your website
-* title -> The title shown in the top bar of the app
-* randomColours -> Whether the icons are random colours or all the same
-
-### Colours
-If you set randomColours to `true`, you can edit the colours array to change the possible random colours.
-If you set randomColours to `false`, you can edit the colour variable to the desired icon colour.
-The colour of the title-bar can be edited in `ionic-soundboard/src/theme/variables.scss` by editing the primary color.
+## Sounds Files
+Unzip the zip file into www/sound
 
 ### Icon & Splash Screen (Note: this Ionic feature is in Beta)
 Replace `ionic-soundboard/resources/icon.png` and `ionic-soundboard/resources/splash.png` with your own files.
