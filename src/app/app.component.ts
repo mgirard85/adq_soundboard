@@ -67,7 +67,7 @@ export class MyApp {
 		smartAudio.preload("Toucher pas à mon jet","assets/sound/toucher pas à mon jet.mp3");
 		smartAudio.preload("Une petite salope","assets/sound/une petite salope-1.mp3");
 		smartAudio.preload("Un vieux connard","assets/sound/vieux connard.mp3");
-		smartAudio.preload("Youhou","asset/sound/youhou1.mp3");
+		smartAudio.preload("Youhou","assets/sound/youhou1.mp3");
     });
   }
 }

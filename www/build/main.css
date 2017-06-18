@@ -24312,3 +24312,8 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+
+.pane {
+  background: url(/assets/img/bg.png) no-repeat center center fixed;
+  background-size: cover;
+}

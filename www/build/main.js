@@ -44086,6 +44086,10 @@ var SmartAudio = (function () {
         });
         if (audio.type === 'html5') {
             var audioAsset = new Audio(audio.asset);
+            console.log(audioAsset);
+            if (audio) {
+                audioAsset.pause();
+            }
             audioAsset.play();
         }
         else {
@@ -44100,9 +44104,10 @@ var SmartAudio = (function () {
 }());
 SmartAudio = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]) === "function" && _b || Object])
 ], SmartAudio);
 
+var _a, _b;
 //# sourceMappingURL=smart-audio.js.map
 
 /***/ }),
@@ -57420,69 +57425,69 @@ var SoundboardPage = (function () {
         /* EDIT THESE */
         this.title = "AlexDuQuebec - Soundboard";
         this.samples = [
-            { "url": "/assets/sound/ascenseur.mp3", "name": "Ascenseur" },
-            { "url": "/assets/sound/assez bien foutu.mp3", "name": "Assez Bien Foutu" },
-            { "url": "/assets/sound/babine.mp3", "name": "Babine" },
-            { "url": "/assets/sound/binouche.mp3", "name": "Binouche" },
-            { "url": "/assets/sound/bizuté.mp3", "name": "Bisuté ma main" },
-            { "url": "/assets/sound/bouuuublblblblbl.mp3", "name": "Bouuuublblblblbl" },
-            { "url": "/assets/sound/burger.mp3", "name": "Burger" },
-            { "url": "/assets/sound/burrito.mp3", "name": "Burrito" },
-            { "url": "/assets/sound/catin.mp3", "name": "Catin" },
-            { "url": "/assets/sound/chaton.mp3", "name": "Chaton" },
-            { "url": "/assets/sound/chevre.mp3", "name": "Chèvre" },
-            { "url": "/assets/sound/derapette.mp3", "name": "Dérapette" },
-            { "url": "/assets/sound/enculé de bouboule.mp3", "name": "Bouboule" },
-            { "url": "/assets/sound/gorgée de cafe1.mp3", "name": "Gorgée de café 1" },
-            { "url": "/assets/sound/grosfromage1.mp3", "name": "Gros Fromage 1" },
-            { "url": "/assets/sound/grosfromage2.mp3", "name": "Gros Fromage 2" },
-            { "url": "/assets/sound/grosfromage3.mp3", "name": "Gros Fromage 3" },
-            { "url": "/assets/sound/grosfromage-leretour.mp3", "name": "Le gros fromage le retour" },
-            { "url": "/assets/sound/grosse babines.mp3", "name": "Grosse Babines" },
-            { "url": "/assets/sound/gueule de con.mp3", "name": "Gueule de con" },
-            { "url": "/assets/sound/helico.mp3", "name": "Hélico" },
-            { "url": "/assets/sound/iecette.mp3", "name": "Piécette" },
-            { "url": "/assets/sound/jet.mp3", "name": "Jet" },
-            { "url": "/assets/sound/La bite à l'air.mp3", "name": "La bite à l'air" },
-            { "url": "/assets/sound/la soularde.mp3", "name": "La Soularde" },
-            { "url": "/assets/sound/lalalalalala.mp3", "name": "Lalalala" },
-            { "url": "/assets/sound/Le sale chinois.mp3", "name": "Le sale chinois" },
-            { "url": "/assets/sound/les legumes.mp3", "name": "Les légumes" },
-            { "url": "/assets/sound/les nichons.mp3", "name": "Les Nichons" },
-            { "url": "/assets/sound/les pots les salopes.mp3", "name": "Les pots les salopes" },
-            { "url": "/assets/sound/ma salope.mp3", "name": "Ma Salope" },
-            { "url": "/assets/sound/mais putain-1.mp3", "name": "Mais putain 1" },
-            { "url": "/assets/sound/makaks.mp3", "name": "Makaks" },
-            { "url": "/assets/sound/meuf.mp3", "name": "Meuf" },
-            { "url": "/assets/sound/oh Putain.mp3", "name": "Oh Putain 1" },
-            { "url": "/assets/sound/on s'en fout putain .mp3", "name": "On s'en fout" },
-            { "url": "/assets/sound/oui.mp3", "name": "Oui !!" },
-            { "url": "/assets/sound/pleurnicheuse.mp3", "name": "Pleurnicheuse" },
-            { "url": "/assets/sound/poil de couille.mp3", "name": "Poil de couille" },
-            { "url": "/assets/sound/pour où ça sort.mp3", "name": "Par où ça sort !" },
-            { "url": "/assets/sound/putain 2.mp3", "name": "Putain" },
-            { "url": "/assets/sound/putain d'armes.mp3", "name": "Putain d'armes" },
-            { "url": "/assets/sound/sa bite.mp3", "name": "Sa bite" },
-            { "url": "/assets/sound/saloperie de cochon.mp3", "name": "Saloperie de cochon" },
-            { "url": "/assets/sound/sucer le tuyau.mp3", "name": "Sucer le tuyau" },
-            { "url": "/assets/sound/toucher pas à mon jet.mp3", "name": "Toucher pas à mon jet" },
-            { "url": "/assets/sound/une petite salope-1.mp3", "name": "Une petite salope" },
-            { "url": "/assets/sound/vieux connard.mp3", "name": "Un vieux connard" },
-            { "url": "/assets/sound/youhou1.mp3", "name": "Youhou" }
+            { "name": "Ascenseur" },
+            { "name": "Assez Bien Foutu" },
+            { "name": "Babine" },
+            { "name": "Binouche" },
+            { "name": "Bisuté ma main" },
+            { "name": "Bouuuublblblblbl" },
+            { "name": "Burger" },
+            { "name": "Burrito" },
+            { "name": "Catin" },
+            { "name": "Chaton" },
+            { "name": "Chèvre" },
+            { "name": "Dérapette" },
+            { "name": "Bouboule" },
+            { "name": "Gorgée de café 1" },
+            { "name": "Gros Fromage 1" },
+            { "name": "Gros Fromage 2" },
+            { "name": "Gros Fromage 3" },
+            { "name": "Le gros fromage le retour" },
+            { "name": "Grosse Babines" },
+            { "name": "Gueule de con" },
+            { "name": "Hélico" },
+            { "name": "Piécette" },
+            { "name": "Jet" },
+            { "name": "La bite à l'air" },
+            { "name": "La Soularde" },
+            { "name": "Lalalala" },
+            { "name": "Le sale chinois" },
+            { "name": "Les légumes" },
+            { "name": "Les Nichons" },
+            { "name": "Les pots les salopes" },
+            { "name": "Ma Salope" },
+            { "name": "Mais putain 1" },
+            { "name": "Makaks" },
+            { "name": "Meuf" },
+            { "name": "Oh Putain 1" },
+            { "name": "On s'en fout" },
+            { "name": "Oui !!" },
+            { "name": "Pleurnicheuse" },
+            { "name": "Poil de couille" },
+            { "name": "Par où ça sort !" },
+            { "name": "Putain" },
+            { "name": "Putain d'armes" },
+            { "name": "Sa bite" },
+            { "name": "Saloperie de cochon" },
+            { "name": "Sucer le tuyau" },
+            { "name": "Toucher pas à mon jet" },
+            { "name": "Une petite salope" },
+            { "name": "Un vieux connard" },
+            { "name": "Youhou" }
         ];
     }
     SoundboardPage.prototype.play = function (sample) {
-        console.log(sample);
         this.smartAudio.play(sample.name);
     };
     return SoundboardPage;
 }());
 SoundboardPage = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/matthieugirard/WebApps/adq_soundboard/src/pages/soundboard/soundboard.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title color="danger">\n    {{ title }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n<ion-grid>\n\n   <ion-row justify-content-start>  \n   <!-- <ion-col offset-2 col-8 col-sm-8 col-md-8 col-xl-8 col-lg-8> -->\n  <button ion-button color="dark" *ngFor="let sample of samples" outline full (click)="play(sample)">\n    <h2>{{ sample.name }}</h2>\n\n  </button>\n<!--   </ion-col> -->\n</ion-row>\n</ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"/Users/matthieugirard/WebApps/adq_soundboard/src/pages/soundboard/soundboard.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* Component */])({template:/*ion-inline-start:"/Users/matthieugirard/WebApps/adq_soundboard/src/pages/soundboard/soundboard.html"*/'<ion-header>\n  <ion-navbar color="dark">\n    <ion-title>\n    {{ title }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content  class="pane">\n    <ion-grid>\n        <ion-row justify-content-center>  \n            <ion-col  col-6 col-sm-6 col-md-3 col-xl-3 col-lg-3  *ngFor="let sample of samples" >\n                <button ion-button icon-start block round color="light" class="card-title" (click)="play(sample)">\n                    <ion-icon name="volume-up"></ion-icon>\n                    {{ sample.name }}\n                </button>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-content> \n'/*ion-inline-end:"/Users/matthieugirard/WebApps/adq_soundboard/src/pages/soundboard/soundboard.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_smart_audio_smart_audio__["a" /* SmartAudio */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__providers_smart_audio_smart_audio__["a" /* SmartAudio */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__providers_smart_audio_smart_audio__["a" /* SmartAudio */]) === "function" && _a || Object])
 ], SoundboardPage);
 
+var _a;
 //# sourceMappingURL=soundboard.js.map
 
 /***/ }),
@@ -104823,7 +104828,7 @@ var MyApp = (function () {
             smartAudio.preload("Toucher pas à mon jet", "assets/sound/toucher pas à mon jet.mp3");
             smartAudio.preload("Une petite salope", "assets/sound/une petite salope-1.mp3");
             smartAudio.preload("Un vieux connard", "assets/sound/vieux connard.mp3");
-            smartAudio.preload("Youhou", "asset/sound/youhou1.mp3");
+            smartAudio.preload("Youhou", "assets/sound/youhou1.mp3");
         });
     }
     return MyApp;
@@ -114496,5 +114501,3 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 /***/ })
 /******/ ]);
 //# sourceMappingURL=main.js.map
-
-(function(w){var i=w.Ionic=w.Ionic||{};i.version='3.0.1';i.angular='4.0.0';})(window);
